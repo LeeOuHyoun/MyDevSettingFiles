@@ -7,6 +7,9 @@ Alt & LButton::MButton
 #n:: Run "notepad++.exe"
 ^q:: Send "!{F4}"
 
+LAlt & 1:: Send "{F5}"
+LAlt & 2:: Send "{F2}"
+
 ; 윈도우키 + 화살표
 LAlt & x:: SendEvent "{LWin Down}{Up Down}{Up Down}{LWin Up}"
 LAlt & z:: SendEvent "{LWin Down}{Down Down}{Down Down}{LWin Up}"
