@@ -1,4 +1,8 @@
 ﻿; ::MsgBox "Hello World!"
+; # :: Win
+; ! :: Alt
+; ^ :: Crt
+; + :: Shift
 ^!r:: Reload
 Alt & LButton::MButton
 !v:: Send "#v"
