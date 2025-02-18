@@ -11,8 +11,9 @@ Alt & LButton::MButton
 #n:: Run "notepad++.exe"
 ^q:: Send "!{F4}"
 
-LAlt & 1:: Send "{F5}"
 LAlt & 2:: Send "{F2}"
+LAlt & 3:: Send "{F3}"
+; LAlt & 4:: Send "{F5}"
 
 ; 윈도우키 + 화살표
 LAlt & x:: SendEvent "{LWin Down}{Up Down}{Up Down}{LWin Up}"
@@ -46,7 +47,11 @@ F1:: Send "{SC1F1}"
 #HotIf WinActive("ahk_exe Chrome.exe")
 ^d:: return
 
-; ; /*** Source Tree ***/
+/*** Source Tree ***/
+#HotIf WinActive("ahk_exe SourceTree.exe")
+{
+    !r:: Send "{F5}"
+}
 #HotIf WinActive("ahk_exe SourceTree.exe") && GetKeyState("Shift", "P")
 {
     ; プル
